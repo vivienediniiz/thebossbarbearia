@@ -22,38 +22,33 @@
 .degrade{
   position: absolute;
    width: 1000px;
-height: 1000px;
-flex-shrink: 0;
-border-radius: 1691px;
-background: radial-gradient(38.34% 38.32% at 50% 52.8%, #F97F38 0%, rgba(249, 127, 56, 0.36) 47.12%, rgba(30, 30, 30, 0.00) 100%);
-margin: 40px -20px 50px 1200px;
+    height: 1000px;
+    flex-shrink: 0;
+    border-radius: 1691px;
+    background: radial-gradient(38.34% 38.32% at 50% 52.8%, #F97F38 0%, rgba(249, 127, 56, 0.36) 47.12%, rgba(30, 30, 30, 0.00) 100%);
+    margin: 40px -20px 50px 1200px;
 
 }
 
 
   
-  header {
+  /* estilos globais do header */
+header {
   display: flex;
   align-items: center;
-  justify-content: center;
-  justify-content: space-between; /* mantém a logo na esquerda */
+  justify-content: space-between;
   padding: 5px 20px;
   background: rgba(62, 60, 60, 0.76);
   backdrop-filter: blur(6px);
-  
 }
 
 .logo img {
-  width: 80px; /* ajuste o tamanho da logo */
+  width: 80px;
 }
 
-nav {
-  flex: 1; /* ocupa espaço entre logo e final */
-}
-
+/* menu desktop */
 nav ul {
   display: flex;
-  justify-content: center; /* centraliza os links */
   gap: 30px;
   list-style: none;
 }
@@ -66,7 +61,15 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #b95e5e; /* cor de hover */
+  color: #b95e5e;
+}
+
+/* botão hamburguer */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
 }
 
 main{
@@ -377,11 +380,16 @@ section-depo{
   padding: 100px;
 }
 
-.depoimentos{
+.scroll-container{
   display: flex;
-  flex-direction: row;
-  gap:20px;
-  margin-top: 70px;
+  gap: 20px;
+  overflow: scroll;
+  padding: 20px;
+  max-width: 100vw; /* garante que haja overflow horizontal */
+   /* As 3 linhas abaixo são para ESCONDER a barra de rolagem */
+  scrollbar-width: none; /* Para Firefox */
+  -ms-overflow-style: none; /* Para IE e Edge */
+
 }
 
 h3{
@@ -389,13 +397,18 @@ h3{
 
 /* Poppins/43px: Regular */
 font-family: Poppins;
-font-size: 38px;
+font-size: 33px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+text-align: center;
+margin-top: 25px;
+}
+.scroll-container::-webkit-scrollbar {
+  display: none;
 }
 
-.depo-1, .depo-2, .depo-3, .depo-4{
+.depo{
   display: flex;
 width: 280px;
 height: 220px;
@@ -432,7 +445,7 @@ line-height: normal;
 .star{
   width: 40%;
 }
-.depo{
+.depoimento{
   color: #FFF;
 /* H5: Regular */
 font-family: Poppins;
@@ -440,6 +453,12 @@ font-size: 10px;
 font-style: normal;
 font-weight: 300;
 line-height: normal;
+transition: transform 0.3s ease;
+}
+
+.depo:hover{
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2)
 }
 
 

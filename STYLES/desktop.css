@@ -81,6 +81,7 @@ main{
     background-image: url(/ASSETS/background-home.png);
     background-repeat: no-repeat;
     background-size: cover;
+   
 }
 
 .logo-main img{
@@ -336,7 +337,12 @@ section-equipe{
   justify-content: right;
   width: 20%;
   gap: 20px;
+  transition: transform 0.3s ease-in-out;
 
+}
+
+.icon img:hover {
+  transform: translateY(-8px);
 }
 
 
@@ -391,8 +397,8 @@ line-height: normal;
 
 .depo-1, .depo-2, .depo-3, .depo-4{
   display: flex;
-width: 265px;
-height: 180px;
+width: 280px;
+height: 220px;
 flex-direction: column;
 align-items: start;
 gap: 15px;
@@ -430,7 +436,7 @@ line-height: normal;
   color: #FFF;
 /* H5: Regular */
 font-family: Poppins;
-font-size: 12px;
+font-size: 10px;
 font-style: normal;
 font-weight: 300;
 line-height: normal;

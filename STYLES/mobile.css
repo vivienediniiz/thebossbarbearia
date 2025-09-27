@@ -626,7 +626,8 @@ background-clip: text;
       background: rgba(0,0,0,0.6);
       justify-content: center;
       align-items: center;
-      padding: 90px;
+      padding: 30px;
+      margin: 30px;
     }
 
     /* Caixa do modal */
@@ -639,6 +640,7 @@ background-clip: text;
       text-align: left;
       position: relative;
       padding: 30px;
+      margin: 30px;
     }
 
     /* Botão fechar */

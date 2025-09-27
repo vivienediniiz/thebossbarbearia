@@ -91,7 +91,6 @@ main{
   width: 550px;
   height: auto;
   margin-right: 130px;
-  margin-top: 10px;
     
 }
 
@@ -394,7 +393,6 @@ section-depo{
 
 h3{
   color: #F97F38;
-
 /* Poppins/43px: Regular */
 font-family: Poppins;
 font-size: 33px;
@@ -419,7 +417,7 @@ flex-shrink: 0;
 border-radius: 12px;
 border: 1px solid #f97f3834;
 background: rgba(255, 255, 255, 0.04);
-padding: 20px;
+padding: 10px;
 }
 
 .foto-nome{
@@ -467,7 +465,8 @@ transition: transform 0.3s ease;
     flex-direction: column;
     align-items: center;
     justify-content:center ;
-    margin-top: 60px;
+    margin-bottom: 20px;
+    
     
   }
 
@@ -477,7 +476,7 @@ transition: transform 0.3s ease;
    align-items: center;
    justify-content: center;
     gap: 50px;
-    margin-top: 50px;
+    margin-top: 40px;
     width: 65%;
 
   }

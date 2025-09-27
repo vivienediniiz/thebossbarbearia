@@ -262,8 +262,8 @@ section-servicos{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 290px;
-height: 400px;
+  width: 350px;
+height: 480px;
 flex-shrink: 0;
 border-radius: 20px;
 background: rgba(255, 255, 255, 0.15);
@@ -273,7 +273,8 @@ backdrop-filter: blur(9.5px);
 .servicos-1 img, .servicos-2 img,
 .servicos-3 img, .servicos-4 img, 
 .servicos-5 img, .servicos-6 img{
-  width: 250px;
+  width: 300px;
+  height:400px ;
 }
 
 
@@ -435,6 +436,14 @@ border-radius: 12px;
 border: 1px solid #f97f3834;
 background: rgba(255, 255, 255, 0.04);
 padding: 20px;
+}
+
+h2{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 35px;
 }
 
 .foto-nome{
@@ -686,7 +695,7 @@ background: #FAFAFA;
     /* Estilo do grid de horários */
 .horarios-grid {
     display: grid;
-    grid-template-columns: repeat(10, 1fr); /* 2 colunas de tamanho igual */
+    grid-template-columns: repeat(5, 1fr); /* 2 colunas de tamanho igual */
     gap: 2px;
 }
 

@@ -1,13 +1,29 @@
-@media (max-width: 800px) {
-  body {
-    font-size: 16px;
-  }
+:root{
+    --cor-primaria:#EC6313;
+    --primaria1: #BD4F0F;
+    --primaria-1: #F97F38;
+    --light:#ffffff;
+    --light1:#d9d9d9;
+    --danger-1:#ff6767;
+    --danger:#ed3131;
+    --danger2:#b70e0e;
+    --dark1:#262626;
+    --dark:#121212;
+    --dark2:#212121;
+    --cinza:#353535;
+    --cinza-1:#4f4f4f;
 
-  .degrade{
+    --fonte-poppins: font-family: "Poppins", sans-serif;
+
+    }
+
+   @media (min-width:480px) and (max-width: 800px){
+
+.degrade{
   position: absolute;
    width: 1000px;
-height: 1000px;
-flex-shrink: 0;
+  height: 1000px;
+  flex-shrink: 0;
 border-radius: 1691px;
 background: radial-gradient(38.34% 38.32% at 50% 52.8%, #F97F38 0%, rgba(249, 127, 56, 0.36) 47.12%, rgba(30, 30, 30, 0.00) 100%);
 margin: 40px -20px 50px 1200px;
@@ -65,7 +81,7 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 80px;
+    gap: 63px;
     background-image: url(/ASSETS/background-home.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -76,9 +92,9 @@ main{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 35px;
+  margin-left: 10px;
   margin-top: 90px;
-  width: 70%;
+  width: 80%;
   height: auto;
   
   
@@ -86,23 +102,10 @@ main{
 }
 
 
-
-h6{
-     color: rgba(255, 255, 255, 0.63);
-text-align: center;
-font-family: Poppins;
-font-size: 30px;
-font-style: normal;
-font-weight: 400;
-line-height: 107%; /* 38.52px */
-font-style: italic;
-
-}
-
 .btn{
     display: flex;
-width: 400px;
-height: 60px;
+width: 250px;
+height: 40px;
 padding: 1px 0;
 justify-content: center;
 align-items: center;
@@ -128,15 +131,15 @@ text-transform: uppercase;
     }
 
 h5{
-color: rgba(255, 255, 255, 0.63);
+color: var(--light);
 text-align: center;
 font-family: Poppins;
-font-size: 37px;
+font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: 107%; /* 38.52px */
 font-style: italic;
-line-height: 50px;
+line-height: 28px;
 }
 
 section-1{
@@ -157,7 +160,6 @@ margin-top:130px;
   align-items: center;
   justify-content: center;
   padding: 15px;
-  margin-top: 300px;
   
   
 }
@@ -170,7 +172,7 @@ flex-shrink: 0;
 h2{
   color: #F97F38;
 font-family: Poppins;
-font-size: 50px;
+font-size: 38px;
 font-style: normal;
 font-weight: 600;
 line-height: 129px; /* 226.316% */
@@ -184,7 +186,7 @@ p{
 leading-trim: both;
 text-edge: cap;
 font-family: Poppins;
-font-size: 22px;
+font-size: 16px;
 font-style: normal;
 font-weight: 400;
 text-align: justify;
@@ -196,7 +198,7 @@ section-barra{
   height: 200px;
   display: flex;
   flex-direction: column;
-  margin-top: 400px;
+  margin-top: 130px;
   
 }
 #barra-1{
@@ -665,7 +667,7 @@ background-clip: text;
       padding: 8px;
       margin-top: 5px;
       border-radius: 8px;
-background: #FAFAFA;
+      background: #FAFAFA;
       border-radius: 6px;
       background-color: var(--light);
     }
@@ -788,4 +790,5 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
     }
-}
+
+   }

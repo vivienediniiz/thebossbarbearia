@@ -1,4 +1,4 @@
-// Garante que o DOM existe (dispensável se o <script> estiver no final do body)
+// Garante que o DOM existe
 document.addEventListener("DOMContentLoaded", () => {
   const scrollContainer = document.getElementById("carousel");
   if (!scrollContainer) {
@@ -14,6 +14,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let speed = 0.8; // px por frame (ajuste a gosto)
 
+  // Restaurar posição salva (se houver)
+  const savedScroll = localStorage.getItem("carouselScroll");
+  if (savedScroll) {
+    scrollContainer.scrollLeft = parseFloat(savedScroll);
+  }
+
   function autoScroll() {
     scrollContainer.scrollLeft += speed;
 
@@ -22,12 +28,13 @@ document.addEventListener("DOMContentLoaded", () => {
       scrollContainer.scrollLeft = 0;
     }
 
+    // Salvar posição atual no localStorage
+    localStorage.setItem("carouselScroll", scrollContainer.scrollLeft);
+
     requestAnimationFrame(autoScroll);
   }
 
   autoScroll();
 });
-
-
 
 AOS.init();

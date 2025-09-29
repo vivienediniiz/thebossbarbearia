@@ -17,7 +17,7 @@
 
     }
 
-   @media (min-width: 768px) and (max-width: 1024px){
+   @media (min-width: 480px) and (max-width: 1024px){
 
 .degrade{
   position: absolute;
@@ -205,17 +205,16 @@ text-align: justify;
 }
 
 section-barra{
-  width: 100%;
+ 
   height: 200px;
   display: flex;
   flex-direction: column;
-  margin-top: 450px;
+  margin-top: 350px;
   
 }
 #barra-1{
   position: absolute;
 display: flex;
-width: 100%;
 transform: rotate(-2.842deg);
 justify-content: center;
 align-items: center;
@@ -247,7 +246,8 @@ section-servicos{
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* exemplo com 3 colunas */
   grid-template-rows: repeat(1, 1fr); /* exemplo com 2 linhas */
-  gap: 60px;
+  gap: 50px;
+  padding: 30px;
   
 
 
@@ -260,8 +260,7 @@ section-servicos{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 350px;
-height: 480px;
+  
 flex-shrink: 0;
 border-radius: 20px;
 background: rgba(255, 255, 255, 0.15);
@@ -271,8 +270,8 @@ backdrop-filter: blur(9.5px);
 .servicos-1 img, .servicos-2 img,
 .servicos-3 img, .servicos-4 img, 
 .servicos-5 img, .servicos-6 img{
-  width: 300px;
-  height:400px ;
+  width: 250px;
+  height:300px ;
 }
 
 
@@ -283,25 +282,26 @@ backdrop-filter: blur(9.5px);
   justify-content: center;
   color: #d9d9d9;
   gap: 20px;
+  padding: 8px;
 }
 
 .corte{
 color: #F6A97C;
 font-family: Poppins;
-font-size: 18px;
+font-size: 16px;
 font-style: normal;
 font-weight: 600;
-line-height: 37px; /* 185% */
+line-height: 20px; /* 185% */
 text-transform: capitalize;
 }
 
 .valor{
 color: #FFF;
 font-family: Poppins;
-font-size: 19px;
+font-size: 16px;
 font-style: normal;
 font-weight: 500;
-line-height: 37px; /* 154.167% */
+line-height: 16px; /* 154.167% */
 text-transform: capitalize;
 }
 
@@ -343,7 +343,7 @@ section-equipe{
   justify-content: center;
   gap: 10px;
   position: absolute;
-  margin-top: 250px;
+  margin-top: 220px;
   margin-left: 20px;
 }
 
